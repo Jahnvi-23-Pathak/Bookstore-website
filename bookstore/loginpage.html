@@ -7,7 +7,7 @@
     <title>Login page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='loginpage.css'>
-    <script src='main.js'></script>
+    <script src='login_page.js'></script>
 </head>
 
 <body>
@@ -15,22 +15,29 @@
         <div class="card">
             <div class="inner-box">
                 <div class="card-front">
-                   
-                        <h2>LOGIN</h2>
+
+                    <h2>LOGIN</h2>
+                    <br><br>
+                    <form id="reg_form" onsubmit="func()">
+                        <input type="text" class="input-box" placeholder="first name" id="fn" required>
                         <br><br>
-                        <form>
-                            <input type="email" class="input-box" placeholder="Your email id" required>
-                            <br><br>
-                            <input type="password" class="input-box" placeholder="password" required>
-                            <br><br>
-                            <div class="submit"><button type="submit" class="submit-btn">Submit</button></div>
-                        </form>
-                    </div>
+                        <input type="text" class="input-box" placeholder="last name" id="ln" required>
+                        <br><br>
+                        <input type="email" class="input-box" placeholder="Your email id" id="em" required>
+                        <br><br>
+                        <input type="password" class="input-box" placeholder="password" id="pass" required>
+                        <br><br>
+                        <p>Forgot password?</p>
+                        <div class="submit"><button type="submit" class="submit-btn">Submit</button></div>
+                    </form>
                 </div>
             </div>
         </div>
-
     </div>
+    </div>
+
+
+
 </body>
 
 </html>
